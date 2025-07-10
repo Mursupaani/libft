@@ -29,7 +29,7 @@ int	ft_print_unsigned_decimal(va_list args)
 	num_str[end--] = '\0';
 	while (end >= 0)
 	{
-		if (num < 0 && end == 0)
+		if (end == 0)
 			num_str[end] = '-';
 		else
 			num_str[end] = num % 10 + '0';
